@@ -39,8 +39,19 @@ apt-get install -y ruby-bundler
 
 # #########################################################################################
 
+echo -e "${ARES_INSTALL_TEXT} Install Rake for building dependencies."
+gem install rake
+
+# #########################################################################################
+
+echo -e "${ARES_INSTALL_TEXT} Install proper SassC version for dependencies."
+
+gem install sassc -v '2.0.0'
+
+# #########################################################################################
+
 echo -e "${ARES_INSTALL_TEXT} Need ruby dev for local gems."
-apt-get install -y ruby-all-dev
+apt-get install -y ruby-all-dev ruby-dev
 
 # #########################################################################################
 
